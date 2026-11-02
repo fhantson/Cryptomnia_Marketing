@@ -13,8 +13,72 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cryptomnia — What Was True When</title>
+<meta name="description" content="Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object so you can prove what was known when a decision was made.">
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
 <link rel="apple-touch-icon" href="data:image/png;base64,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">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Cryptomnia",
+      "url": "https://cryptomnia.com",
+      "description": "Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object so you can prove what was known when a decision was made.",
+      "sameAs": ["https://pointofdata.ai"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Cryptomnia",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Memory layer for crypto risk scores, attributions, and claims. Enables as-of queries, auditable forgetting, and provenance on Pod-OS.",
+      "url": "https://cryptomnia.com",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Cryptomnia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object with full provenance, so you can prove what was known at the moment a decision was made."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Cryptomnia retrieve the risk score that was active on a past date?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cryptomnia stores successive risk scores as separate Event Objects. An as-of query returns the score that was valid at the requested timestamp, including its source and provenance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is auditable forgetting in Cryptomnia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When a source or assessment is discredited, Cryptomnia marks it forgotten. The forget action itself becomes a permanent, queryable Event Object. The original record is never silently overwritten."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Cryptomnia built on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cryptomnia runs on Pod-OS, a time-aware multigraph database from PointOfData. Facts are stored as Event Objects with full spacetime context. Previous versions are never lost."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 <style>
   :root {
     --bg: #0b0f19;
@@ -110,6 +174,15 @@
   }
   .card h3 { margin-bottom: 0.5rem; font-size: 1.15rem; }
   .card p { color: var(--muted); font-size: 0.95rem; }
+  .faq-item {
+    background: var(--card);
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .faq-item h3 { margin-bottom: 0.5rem; font-size: 1.1rem; }
+  .faq-item p { color: var(--muted); font-size: 0.95rem; }
   .demo-box {
     background: #0f172a;
     border: 1px solid #1e293b;
@@ -142,6 +215,7 @@
   <nav>
     <a href="#what">What</a>
     <a href="#how">How</a>
+    <a href="#faq">FAQ</a>
     <a href="#demo">Demo</a>
     <a href="/Cryptomnia_Whitepaper.pdf">Whitepaper</a>
   </nav>
@@ -184,6 +258,30 @@
   <h2>Built on Pod-OS</h2>
   <p>Cryptomnia runs on <a href="https://pointofdata.ai" style="color:#3b82f6;">Pod-OS</a>, a time-aware multigraph database. Facts are stored as Event Objects with full spacetime context. Previous versions are never lost. Forgetting is auditable.</p>
   <p style="margin-top:1rem;">A reference Streamlit prototype demonstrates the full flow: ingest Observations, view them on an interactive timeline, run as-of queries, mark claims forgotten, and attach evidence files — all against a live Pod-OS ENM.</p>
+</section>
+
+<section class="section" id="faq">
+  <h2>Frequently asked questions</h2>
+
+  <div class="faq-item">
+    <h3>What is Cryptomnia?</h3>
+    <p>Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object with full provenance, so you can prove what was known at the moment a decision was made.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>How does Cryptomnia retrieve the risk score that was active on a past date?</h3>
+    <p>Cryptomnia stores successive risk scores as separate Event Objects. An as-of query returns the score that was valid at the requested timestamp, including its source and provenance. The working prototype also shows this history as an interactive timeline.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>What is auditable forgetting in Cryptomnia?</h3>
+    <p>When a source or assessment is discredited, Cryptomnia marks it forgotten. The forget action itself becomes a permanent, queryable Event Object. The original record is never silently overwritten and remains available for audit.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>What is Cryptomnia built on?</h3>
+    <p>Cryptomnia runs on Pod-OS, a time-aware multigraph database from PointOfData. Facts are stored as Event Objects with full spacetime context. Previous versions are never lost, and forgetting is itself an auditable event.</p>
+  </div>
 </section>
 
 <section class="section" id="demo">
