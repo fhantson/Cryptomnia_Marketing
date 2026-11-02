@@ -1,0 +1,29 @@
+# Cryptomnia
+
+> Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object so you can prove what was known at the moment a decision was made.
+
+## Key facts
+
+- Cryptomnia keeps successive versions of risk scores, entity attributions, and claims with source and timestamp.
+- As-of queries return the exact assessment that was active on a given date.
+- Forgetting is auditable: marking a claim forgotten creates a permanent, queryable record. Nothing is silently overwritten.
+- Every assessment carries who, when, and which source. Supporting evidence files can be attached and retrieved later.
+- Built on Pod-OS (PointOfData), a time-aware multigraph database.
+- Working Streamlit prototype demonstrates ingest, interactive timeline, as-of queries, forgetting, and evidence attachment.
+
+## Links
+
+- Website: https://cryptomnia.com
+- Whitepaper: https://cryptomnia.com/Cryptomnia_Whitepaper.pdf
+- Built on: https://pointofdata.ai
+
+## FAQ
+
+**What is Cryptomnia?**
+Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object with full provenance.
+
+**How does Cryptomnia retrieve the risk score that was active on a past date?**
+An as-of query returns the Event Object that was valid at the requested timestamp, including its source and provenance.
+
+**What is auditable forgetting?**
+When a source is discredited, Cryptomnia marks the assessment forgotten. The forget action itself becomes a permanent, queryable Event Object. The original record is never silently overwritten.
