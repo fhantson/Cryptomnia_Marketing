@@ -161,7 +161,7 @@
   <div class="grid">
     <div class="card">
       <h3>Time-aware risk</h3>
-      <p>Store successive risk scores for an address. Later, retrieve the exact score that was active on the day a transaction was approved.</p>
+      <p>Store successive risk scores for an address. Later, retrieve the exact score that was active on the day a transaction was approved. A visual timeline shows how the score evolved by source.</p>
     </div>
     <div class="card">
       <h3>Auditable forgetting</h3>
@@ -169,7 +169,7 @@
     </div>
     <div class="card">
       <h3>Provenance built in</h3>
-      <p>Every assessment carries who, when, and which source. Links connect claims to the evidence that supported them.</p>
+      <p>Every assessment carries who, when, and which source. Supporting evidence files can be attached to any observation and retrieved later with the claim.</p>
     </div>
     <div class="card">
       <h3>Automated feed</h3>
@@ -181,7 +181,7 @@
 <section class="section" id="how">
   <h2>Built on Pod-OS</h2>
   <p>Cryptomnia runs on <a href="https://pointofdata.ai" style="color:#3b82f6;">Pod-OS</a>, a time-aware multigraph database. Facts are stored as Event Objects with full spacetime context. Previous versions are never lost. Forgetting is auditable.</p>
-  <p style="margin-top:1rem;">A reference Streamlit prototype and hourly feed demonstrate the full Observation → timeline → as-of flow against a live Pod-OS ENM.</p>
+  <p style="margin-top:1rem;">A reference Streamlit prototype demonstrates the full flow: ingest Observations, view them on an interactive timeline, run as-of queries, mark claims forgotten, and attach evidence files — all against a live Pod-OS ENM.</p>
 </section>
 
 <section class="section" id="demo">
@@ -198,7 +198,7 @@
     <div style="margin-top:0.6rem;"><span class="cmd">forget risk-a1b2</span></div>
     <div style="color:#94a3b8;">→ Auditable forget recorded. Original assessment marked forgotten. Record remains queryable.</div>
   </div>
-  <p style="color:var(--muted); font-size:0.9rem;">Working prototype available (including automated feed). Live demo on request. <a href="/Cryptomnia_Whitepaper.pdf" style="color:#3b82f6;">Whitepaper (PDF)</a>.</p>
+  <p style="color:var(--muted); font-size:0.9rem;">The working Streamlit prototype shows the same history as an interactive timeline (per source), supports as-of queries, forgetting, and evidence file attachment. Live demo on request. <a href="/Cryptomnia_Whitepaper.pdf" style="color:#3b82f6;">Whitepaper (PDF)</a>.</p>
 </section>
 
 <footer>
