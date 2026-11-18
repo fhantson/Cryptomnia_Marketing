@@ -286,7 +286,7 @@
 
 <section class="section" id="demo">
   <h2>Example sequence</h2>
-  <p>A compliance officer approves a $2.4 million outbound transfer on 18 June after an internal review. Six weeks later a regulator asks what risk score was known at the moment of approval. Cryptomnia answers with the exact record that was active that day — source, timestamp, and attached evidence still intact:</p>
+  <p>A compliance team receives a request for a $2.4 million withdrawal. On 3 March a vendor scores the source wallet 67 due to mixer exposure. On 18 June, after internal review, the team scores it 41 and approves the transfer. Months later the vendor revises its attribution; the team records an auditable forget of the original score. When a regulator asks what risk assessment was known at the moment of approval, Cryptomnia returns the exact record that was active that day, with source, timestamp, and attached evidence still intact:</p>
   <div class="demo-box">
     <div><span class="cmd">risk 0x4a3c…e7f1 67 chainalysis</span> <span class="comment"># 3 Mar · mixer exposure flagged</span></div>
     <div><span class="cmd">risk 0x4a3c…e7f1 41 internal</span> <span class="comment"># 18 Jun · cleared after review (evidence attached)</span></div>
