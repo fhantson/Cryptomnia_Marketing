@@ -286,17 +286,14 @@
 
 <section class="section" id="demo">
   <h2>Example sequence</h2>
-  <p>What a live query looks like:</p>
+  <p>A compliance officer approves a $2.4 million outbound transfer on 18 June after an internal review. Six weeks later a regulator asks what risk score was known at the moment of approval. Cryptomnia answers with the exact record that was active that day — source, timestamp, and attached evidence still intact:</p>
   <div class="demo-box">
-    <div><span class="cmd">risk 0xdeadbeef 92 chainalysis</span> <span class="comment"># 10 Oct · high mixer exposure</span></div>
-    <div><span class="cmd">risk 0xdeadbeef 45 internal</span> <span class="comment"># 14 Oct · cleared after review</span></div>
-    <div><span class="cmd">history 0xdeadbeef</span></div>
-    <div style="margin-top:0.6rem; color:#94a3b8;">→ risk-a1b2 · score 92 · source chainalysis · 2026-10-10</div>
-    <div style="color:#94a3b8;">→ risk-c3d4 · score 45 · source internal · 2026-10-14</div>
-    <div style="margin-top:0.6rem;"><span class="cmd">as-of 0xdeadbeef 2026-10-16</span> <span class="comment"># transfer approved</span></div>
-    <div style="color:#94a3b8;">→ risk-c3d4 · score 45 · source internal · valid at approval</div>
-    <div style="margin-top:0.6rem;"><span class="cmd">forget risk-a1b2</span></div>
-    <div style="color:#94a3b8;">→ Auditable forget recorded. Original assessment marked forgotten. Record remains queryable.</div>
+    <div><span class="cmd">risk 0x4a3c…e7f1 67 chainalysis</span> <span class="comment"># 3 Mar · mixer exposure flagged</span></div>
+    <div><span class="cmd">risk 0x4a3c…e7f1 41 internal</span> <span class="comment"># 18 Jun · cleared after review (evidence attached)</span></div>
+    <div style="margin-top:0.6rem;"><span class="cmd">as-of 0x4a3c…e7f1 2026-06-18</span> <span class="comment"># transfer approved</span></div>
+    <div style="color:#94a3b8;">→ score 41 · source internal · valid at approval · evidence file still attached</div>
+    <div style="margin-top:0.6rem;"><span class="cmd">forget risk-a1b2</span> <span class="comment"># vendor later revised attribution</span></div>
+    <div style="color:#94a3b8;">→ Auditable forget recorded. Original Chainalysis 67 remains queryable. Nothing overwritten.</div>
   </div>
   <p style="color:var(--muted); font-size:0.9rem;">The working Streamlit prototype shows the same history as an interactive timeline (per source), supports as-of queries, forgetting, and evidence file attachment. Live demo on request. <a href="/Cryptomnia_Whitepaper.pdf" style="color:#3b82f6;">Whitepaper (PDF)</a>.</p>
 </section>
