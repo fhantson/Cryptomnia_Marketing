@@ -13,7 +13,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cryptomnia — What Was True When</title>
-<meta name="description" content="Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object so you can prove what was known when a decision was made.">
+<meta name="description" content="Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object so you know what was recorded, when it was recorded, and what evidence supported the decision.">
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
 <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAHFElEQVR4nOVXa3BV1Rld5xFzk5sn3IQYQh5igEAwGmnTAUVLKwzQ4hRJ0VqmZXBAW21stVRpGXRGGehUbB1LO7RjsQoFLvImCYZMQMBILBAIryCQx82LJORJ7uucvVd/3HuPSUiA+sfO9Ju5M3fO/s63115nfWvvrZDU8P8cihCi8GsFQJJfJwBdSinuJJEkhJS4K0wDoA6bZxgGFEWBqg6f0z8UKeVtGRBCQte14H+B6stXcflKDdraOyCkQHRUFNLGjMaEcfdiRHyclacoChRFuWVt/XaTSxmYvKurG5udu7BzXzHOXqhGZ1c3DMOEqirQNA1RdjvSU8dg+rQ8LFo4Hw/kZFvv3wrEsAyEpKGqKnbuK8badX/GydNnERVlR052FiZPykJ6agoAwNXYjPMXL6Hq3EV09fQgKTEBP/rhD/Dbl19AhM12axBSSg7+CSFomiZJctXqtxifOomxKVlc8vzLPFJeQY/HQ5KsdzWyueUaSdLn8/HT4//msoJXeHdmLkemT+aCRUvZ0dll1RxqriEBGIZBklzx+hrakzKZNimP72920tXYRJIBgEJwy0d7uKfwY5pCUAhBkmxsbuHGTduYkTONmiODTyxaSr9h3DmA0OTvfbiVMaMnMHXiN7mv+CBJcvvu/fzHh1tJkqZpss/tptvjsdja7NzFTc6dJMmDRSV8auFiFhUfpAgCvC0A0zQppeTV2npm3v8QY1Oy+N4HW4IU+ymEYG29y6I0FKHiV2vr6TcMmqags6OdL129xD6SQkqKISa/CYARXMkvX32NYSPSufCnz7K1rZ03bvRZOSQHaKV/4VB0+nyMK9pHrH+HG06fIkl6DWNIAJZbSBK6pqG5pRVFH5fBbo/Aiz97Bg2NzXh3w0bLYEK5JAN9DkBKIqRxQSImLAxPRkVjWoQd13UVTT4vwnUdgoRJQvQ338HffuuOPYwcdS8fnbOAHq+XJNnd00NTCJYePsotH+2xVmoYhvWeDOrmRGUVBcm/VF8gSTb4vVxbc4mfdLazf9zEQAjUycoqeDxePHj/fbCFh0NKiZjoaCgA8qbkorWtHatWv4U+txu6rkPXdVR/cQXLV76JSLsdudlZKGpqwNjYOEgQo8PCsTw9E21+H3Zca8Sf6utQ1nEdiqIEWA8BUNUAiQ1NLYACpKelwOPxwu3xID4uFoqiwB4ZgReWLcbu/QdQsHwVli5+GjV19Th09DMUPLsEE8aNRZffj1avD4vvCZiUVwi0+H24JzwCq69chrPeBUeYitqZcxEZFvYlgND3dbs9UKAgLjYWn3x6HFXnL+LF55ZA13VIKWEKgcfnzkKCYyTyHpqFadOn4nDhdmiahvcbXHjt0kX8ZFQSituvocnrgSBhUzWk2myY60jEsbpazItPQLimgf0ZCFlvePhdgAJ0dXfjxwvnY9Z3HoEQ0hKdrmkwhcC3vpGLFStewrS8KdA0DZQSO+pqUXvqFA6kpOCpjMeRY49Bks1mLe4LnwunZn8PibYIgIQEbgaQNCoBUkjUuRoBAKZpQtd1K0dRFGhB9b+5cnlA+VJCU1WsmZCFXK8XkXY7vG43xjsS4DFN2HQdu1pbkBkRiURbBEwprRpWF/iDat64aRvDHRl8eNZ8+v1++g2DJyqr6A/1sRjomiHz6u8DkuQfz1SytLHB8oX1rppA5wxyxC9FGKTp2w9PRcrou3H67DmUV5yA3zBRU+dCTvZESCmDuYHm0bSB51nDFCAIXVXxi0n34W/nzqDG68UxnwfLU9MDWsOgGGzFJLms4DcMd2Twu/OepMfjtex2cA8P9njLH4J1SHLE/r3Evz7guqAv+IU5tBP210LBc0uQmODA5ydPY+Ubv7fGrrW24eChI4EelhKqqkJVVUs/B0oPo6OzC7qmoe16B7Zt342fp6dhHIApMbFBBgZxMNxuuP7v/2R08niOTM/mr3/3BkmyqKSM+w+U0jBNGobByjPneO5CddARTW7buZflFSfY3dPLJxYtZUTCWK5e+zb9QUaG2pBuex6ITh7PuDFZnP/0Mzz++ckBdrq3qISlh44OeFZUUsZH5yygI2Myk8c9yA0bNwWoN8yb5pFScsgjGYObjaZpWPfuBvzhnb+io6sbiQkOzJg+FTNnPILsieNhj4wEAPT09uJ01XkUlpThaHkFenv7kJqSjDWvv4rvz34MQohhT8mKEMIcaiAEQtd1lFecwJq31+PIsc/Q2dkFLUxHXEwMYmOjQQYA9PT0QkpiVKIDc2bOwCu/eh5jM9JgGEagWzhUC/yXF5Mz56tReKAUJyur0NDUjBt9bgBATHQUUsekIG/KA5g3+zFkpKXcack7u5qFKOzf967GJnR0dgMAHCPiMTo5yRozDAOACk279Z3gfyIUfsXrudPphNPpBADk5+cjPz//KwH4DxwacSX2c1/NAAAAAElFTkSuQmCC">
 <script type="application/ld+json">
@@ -24,7 +24,7 @@
       "@type": "Organization",
       "name": "Cryptomnia",
       "url": "https://cryptomnia.com",
-      "description": "Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object so you can prove what was known when a decision was made.",
+      "description": "Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object so you know what was recorded, when it was recorded, and what evidence supported the decision.",
       "sameAs": ["https://pointofdata.ai"]
     },
     {
@@ -47,7 +47,7 @@
           "name": "What is Cryptomnia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object with full provenance, so you can prove what was known at the moment a decision was made."
+            "text": "Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object with full provenance, so you know what was recorded, when it was recorded, and what evidence supported the decision."
           }
         },
         {
@@ -223,7 +223,7 @@
 
 <section class="hero">
   <h1>What was true <span>when</span>.</h1>
-  <p class="lead">Cryptomnia is the memory layer for crypto. It keeps every risk score, attribution, and claim as a time-stamped Event Object so you can prove what was known at the moment a decision was made.</p>
+  <p class="lead">Cryptomnia is the memory layer for crypto. It keeps every risk score, attribution, and claim as a time-stamped Event Object so you know what was recorded, when it was recorded, and what evidence supported the decision.</p>
   <a href="#demo" class="cta">See the idea</a>
   <a href="/Cryptomnia_Whitepaper.pdf" class="cta secondary">Read the whitepaper</a>
   <a href="mailto:hello@cryptomnia.com" class="cta secondary">Get in touch</a>
@@ -265,7 +265,7 @@
 
   <div class="faq-item">
     <h3>What is Cryptomnia?</h3>
-    <p>Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object with full provenance, so you can prove what was known at the moment a decision was made.</p>
+    <p>Cryptomnia is the memory layer for crypto. It stores every risk score, attribution, and claim as a time-stamped Event Object with full provenance, so you know what was recorded, when it was recorded, and what evidence supported the decision.</p>
   </div>
 
   <div class="faq-item">
@@ -286,14 +286,19 @@
 
 <section class="section" id="demo">
   <h2>Example sequence</h2>
-  <p>A compliance team receives a request for a $2.4 million withdrawal. On 3 March a vendor scores the source wallet 67 due to mixer exposure. On 18 June, after internal review, the team scores it 41 and approves the transfer. Months later the vendor revises its attribution; the team records an auditable forget of the original score. When a regulator asks what risk assessment was known at the moment of approval, Cryptomnia returns the exact record that was active that day, with source, timestamp, and attached evidence still intact:</p>
-  <div class="demo-box">
-    <div><span class="cmd">risk 0x4a3c…e7f1 67 chainalysis</span> <span class="comment"># 3 Mar · mixer exposure flagged</span></div>
-    <div><span class="cmd">risk 0x4a3c…e7f1 41 internal</span> <span class="comment"># 18 Jun · cleared after review (evidence attached)</span></div>
-    <div style="margin-top:0.6rem;"><span class="cmd">as-of 0x4a3c…e7f1 2026-06-18</span> <span class="comment"># transfer approved</span></div>
-    <div style="color:#94a3b8;">→ score 41 · source internal · valid at approval · evidence file still attached</div>
-    <div style="margin-top:0.6rem;"><span class="cmd">forget risk-a1b2</span> <span class="comment"># vendor later revised attribution</span></div>
-    <div style="color:#94a3b8;">→ Auditable forget recorded. Original Chainalysis 67 remains queryable. Nothing overwritten.</div>
+  <p>A compliance team receives a request to approve a $2.4 million withdrawal.</p>
+  <p style="margin-top:1rem;"><strong>3 March — Vendor flags the wallet</strong><br>67 · Chainalysis · mixer exposure<br>The vendor assessment and supporting report are recorded with source and timestamp.</p>
+  <p style="margin-top:1rem;"><strong>18 June — Internal review reaches its own assessment</strong><br>41 · Internal compliance review · cleared<br>After further investigation the team adopts its own score of 41 and approves the withdrawal. The internal assessment, rationale, and supporting evidence (review notes + transaction investigation) are recorded. The earlier vendor score remains in the historical record.</p>
+  <p style="margin-top:1rem;"><strong>Months later — Vendor revises its attribution</strong><br>The original Chainalysis assessment is marked as forgotten because the underlying attribution has changed. Its status, the reason for the change, and the date are recorded. The original assessment is not deleted and remains queryable.</p>
+  <p style="margin-top:1.2rem;"><strong>Regulator asks: What was known when the withdrawal was approved?</strong></p>
+  <div class="demo-box" style="border-left: 3px solid #22d3ee; padding-left: 1.4rem;">
+    <div style="color:#22d3ee; font-weight:600; margin-bottom:0.4rem;">HISTORICAL QUERY · JUNE 18, 2026</div>
+    <div style="font-size:1.4rem; font-weight:700; color:#e6edf3; margin:0.3rem 0;">41</div>
+    <div style="color:#94a3b8; margin-bottom:0.8rem;">Relied upon for approval · Internal compliance assessment</div>
+    <div style="color:#94a3b8;">• Decision: Withdrawal approved</div>
+    <div style="color:#94a3b8;">• Source: Internal review</div>
+    <div style="color:#94a3b8;">• Evidence: Review notes and transaction investigation</div>
+    <div style="color:#94a3b8;">• Vendor score of 67: Preserved in history</div>
   </div>
   <p style="color:var(--muted); font-size:0.9rem;">The working Streamlit prototype shows the same history as an interactive timeline (per source), supports as-of queries, forgetting, and evidence file attachment. Live demo on request. <a href="/Cryptomnia_Whitepaper.pdf" style="color:#3b82f6;">Whitepaper (PDF)</a>.</p>
 </section>
